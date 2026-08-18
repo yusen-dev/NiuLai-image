@@ -40,7 +40,7 @@
     "不要沿用既有字幕或画面文字；所有对白必须根据 MAIN_TEXT 和 SECONDARY_TEXT 重新创作。",
     "不要生成来源角标、水印、品牌、平台图标、播放器按钮、关闭键、翻页箭头或其他界面控件。",
     "不要把影院座椅、银幕边框或手机翻拍梯形畸变当作必需内容；只有用户明确要求二次拍屏时才使用。",
-    "不要复制任何现有动画、游戏、电影或儿童节目的角色身份、logo、商标与叙事世界。"
+    "原创生成时不要复制任何现有动画、游戏、电影或儿童节目的角色身份、logo、商标与叙事世界；用户主动提供待转换图片并明确要求保留虚构角色时，只为该次编辑保留其身份、可见服装特征、动作与构图，不得将其加入风格参考包。"
   ],
   "visual_deconstruction": {
     "overall_style_category": "低预算早期实时 3D CGI、PS2 时代过场动画、地方儿童 VCD、Uncanny/Cursed CGI 与数字原始主义的混合视觉。",
@@ -138,7 +138,7 @@
       "避免写实森林植被、精细树叶、真实地形侵蚀、自然天空云层与丰富大气透视。",
       "避免赛博朋克霓虹、电影青橙调色、胶片颗粒、VHS 扫描线和过量 glitch；这些都不是目标年代与媒介。",
       "避免自觉恶搞、表情包构图、互联网梗文字、恐怖血腥与刻意 jump scare。",
-      "原创生成时避免复制既有作品中的角色、真实人物、现成字幕、品牌、logo、水印、角标、影院环境和平台界面。",
+      "原创生成时避免复制既有作品中的角色、真实人物、现成字幕、品牌、logo、水印、角标、影院环境和平台界面；用户主动提供编辑目标时，只保留其明确要求锁定的虚构角色、文字、标识、道具与构图，其他来源内容仍不得迁移。",
       "避免把变量的省略指令渲染成文字；ACCENT_SYMBOL 或 SECONDARY_TEXT 表示不使用时应完全省略。"
     ],
     "negative_prompt": "physical felt fibers, flocked fuzzy surface, wool pile, plush toy, chenille, carpet texture, sponge pores as geometry, tactile clumps, raised fibers, displacement mapping, parallax mapping, heavy bump mapping, normal-map microdetail, PBR roughness variation, realistic fur strands, photoreal materials, crisp high-resolution textures, clean modern texture atlas, uniform texel density, perfectly clean UVs, procedural micro-noise, subdivision-perfect model, seamless designer toy, premium clay render, extreme ultra-low-poly sculpture, voxel forms, cube limbs, only a few giant polygon planes, deliberately showcased triangle facets, modern polished CGI, Pixar style, Disney style, cinematic PBR, ray tracing, global illumination, volumetric lighting, dramatic rim light, sophisticated color grading, elegant anatomy, perfect facial symmetry, smooth professional rigging, dynamic action pose, complex camera movement, premium game cutscene, ultra-clean render, glossy commercial character design, realistic forest foliage, neon cyberpunk, VHS scanlines, excessive glitch, intentional meme collage, gore, horror monster, copied subtitles, logos, watermarks, app UI, media-player controls, recognizable public figure"
