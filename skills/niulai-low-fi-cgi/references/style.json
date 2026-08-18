@@ -2,18 +2,18 @@
   "schema_version": "musepool-style-spec/1.0",
   "style_name": "NiuLai · 荒诞低精度 CGI",
   "style_slug": "niulai-low-fi-cgi",
-  "style_summary": "原创的千禧年前后低预算儿童 VCD 与 PS2 过场式 3D CGI：低复杂度拟人角色、僵硬绑定、迟钝表情、粗颗粒塑料或植绒贴图、重复素材搭建的山林、过饱和绿青橙配色、简单均匀照明、朴素眼平构图与轻度低码率介质痕迹。怪诞感来自真诚而笨拙的制作限制，不来自自觉恶搞。",
+  "style_summary": "原创的千禧年前后低预算儿童 VCD 与旧式 PC/主机游戏过场式 3D CGI：fixed-function 时代中等偏低面数的粗糙实时网格、僵硬绑定、迟钝表情、低 texel 密度的低清 diffuse 贴图、近处可辨的放大色块、UV 拉伸与重复素材山林，再配过饱和绿青橙、简单顶点光照、朴素眼平构图和低码率介质痕迹。粗糙感来自早期实时建模与贴图映射本身，不来自实体绒毛、立体颗粒或现代复古滤镜。",
   "reference_images": [],
   "environment_variables": {
     "SUBJECT": "原创的拟人化蔬菜角色",
     "SUBJECT_ACTION": "在森林里一本正经地讨论一件荒唐小事",
     "PRODUCT_OR_PROP": "一只造型笨拙的红色塑料水壶",
-    "LOCATION": "重复素材搭建的低多边形山林",
-    "BACKGROUND_ELEMENTS": "球状树冠、细树干、起伏圆丘、平铺草地和几块低模岩石",
+    "LOCATION": "重复素材搭建的粗糙简模山林",
+    "BACKGROUND_ELEMENTS": "球状树冠、细树干、起伏圆丘、平铺草地和几块钝圆粗糙岩石",
     "MAIN_TEXT": "今天的风有点咸",
     "SECONDARY_TEXT": "不使用副标题",
     "ACCENT_SYMBOL": "不使用额外符号",
-    "WARDROBE_STYLE": "过时的短袖衬衫和宽松裤子，材质像廉价泡沫",
+    "WARDROBE_STYLE": "过时的短袖衬衫和宽松裤子，颜色、布纹和阴影直接画在一张低清贴图里",
     "ASPECT_RATIO": "4:3",
     "CHARACTER_COUNT": "2",
     "FACIAL_EXPRESSION": "半睁眼、迟钝、怀疑又一本正经",
@@ -22,21 +22,21 @@
   },
   "style_fidelity_anchors": [
     "把画面处理成约 1998–2005 年的低预算儿童 VCD 三维动画或 PS2 时代游戏过场，而不是现代复古滤镜作品。",
-    "角色必须由极低复杂度椭球、8–12 边圆柱、楔形块和钝角体块构成，关闭细分曲面；头部偏大、四肢短粗、手掌像连指手套，轮廓要看见直线段、平面切面、突兀接头和僵硬绑定。",
+    "角色使用 fixed-function 时代中等偏低面数的实时网格：由椭圆头、胶囊躯干、粗圆柱四肢、连指手和钝脚等基础体拼装，二级形体少、接头突兀、绑定僵硬；轮廓保留足够分段，仅在关节和大曲线处轻微分段，不使用现代 subdivision-surface 丝滑平滑，也不能退化成体素、方块肢体或大片三角切面。",
     "面部只用少量部件表达情绪：半睁或略错位的小眼睛、粗眉、钝鼻或厚实口鼻部，形成迟钝而一本正经的表情。",
-    "角色、草地、树冠、山丘与岩石使用约 32–128 px 的低分辨率重复漫反射贴图与有限纹理过滤；必须看见像素块、UV 拉伸、接缝、镜像、尺度错乱和可见平铺，不要用细腻均匀的程序毛毡噪点、真实毛发或高级材质掩盖低模。",
+    "角色、衣服、树皮、草地、树冠、山丘与岩石都使用低清栅格 diffuse 贴图；毛发、布纹、草叶、树皮、石纹、金属磨损和大部分明暗都只是画进贴图的扁平颜色。让 texel 密度降到正常的约 1/3–1/5：近处以 nearest 或弱 bilinear 采样保留可辨认的放大色块与粗笔触，只有远处 mip 层变脏变糊；保留 UV 拉伸、接缝、镜像、明显平铺与不同部位纹理尺度不一致。不要用整帧柔焦代替低清贴图，也不要生成真实绒毛、立体颗粒、位移或现代 PBR 细节。",
     "环境像由廉价素材包搭出的舞台：球状或椭球树冠、细树干、圆滑山丘、单层草地平面和少量重复岩石。",
     "以过饱和草绿和纯青天空为大面积背景，以土黄、赭橙、灰白和暗黑构成角色及道具，颜色分区简单直接。",
-    "只使用一盏宽泛主光与弱环境光，接触阴影不足、反射简单，角色偶尔呈塑料、软陶或廉价植绒般的统一粗糙表面。",
+    "只使用一盏宽泛主光与弱环境光，接触阴影不足、反射简单；大量颜色、阴影和磨损直接烘焙在 diffuse 贴图里，实时光照只提供粗略的顶点明暗。",
     "构图保持固定机位、眼平、过于居中或左右对话式布局；优先中景、半身双人镜头、突兀大特写和简陋三层景片。",
     "整体呈轻度低清视频质感：有限分辨率、锯齿、色度渗漏、压缩晕染、轻微锐化光环或不自然的缩放模糊。",
     "叙事态度必须天真、严肃且毫无自觉；荒诞感来自制作能力和年代限制，不要加入自知式 meme 表情、精致恶搞或密集 glitch。"
   ],
   "source_content_to_avoid": [
-    "不要复刻任何既有作品或用户输入图中的角色身份、具体脸型、标志性服装、固定配色、人物关系或世界观。",
+    "原创生成时不要复刻任何既有作品中的角色身份、具体脸型、标志性服装、固定配色、人物关系或世界观；用户明确提供当前会话编辑目标时，只保留其要求保留的内容，不把它当成可迁移的风格来源。",
     "不要复制可识别的真实人物或公共人物，也不要沿用其发型、面部结构和身份线索。",
     "不要复制既有作品中的独特道具、具体手势、站位、剧情动作或镜头排列。",
-    "不要照搬用户输入图中的树木、山丘、岩石位置或背景布局，只迁移低成本素材化环境的搭建逻辑。",
+    "原创生成时不要照搬既有作品中的树木、山丘、岩石位置或背景布局；显式图片转换时可按用户要求保留目标图布局，但只改变 3D 材质与渲染语言。",
     "不要沿用既有字幕或画面文字；所有对白必须根据 MAIN_TEXT 和 SECONDARY_TEXT 重新创作。",
     "不要生成来源角标、水印、品牌、平台图标、播放器按钮、关闭键、翻页箭头或其他界面控件。",
     "不要把影院座椅、银幕边框或手机翻拍梯形畸变当作必需内容；只有用户明确要求二次拍屏时才使用。",
@@ -49,8 +49,8 @@
     "camera_or_perspective": "普通到轻微广角的虚拟相机，眼平固定机位，透视简单；避免英雄低角度、复杂运镜和精致电影景深。",
     "typography_style": "可选的简体中文 VCD 硬字幕：底部居中、白色或浅灰无衬线字、深蓝黑粗描边，略有锯齿、压缩晕染与缩放模糊。",
     "color_palette_behavior": "背景以不自然的高饱和草绿与纯青蓝为主，角色集中使用土黄、赭橙、灰白和暗色；黑位略堵、亮部略炸，颜色缺少真实环境反射。",
-    "graphic_elements": "椭球和圆柱拼接的角色、球状树冠、细长树干、圆滑山丘、低模岩石、纯色天空与少量突兀道具；同一资产重复缩放和旋转。",
-    "texture_and_finish": "低分辨率无缝贴图、粗颗粒 bump、重复短毛或海绵压纹、UV 拉伸、接缝和统一粗糙度；画面带低码率视频与早期数字渲染痕迹。",
+    "graphic_elements": "椭球、粗圆柱和楔形块拼接的角色、球状树冠、细长树干、圆丘、钝块岩石、纯色天空与少量突兀道具；建模细节稀少、曲线略折，同一资产重复缩放和旋转。",
+    "texture_and_finish": "低 texel 密度的手绘或照片采样 diffuse 贴图被直接包在粗糙模型上：细节以扁平色块和粗笔触存在，视觉尺度放大约 3–5 倍；近处仍可辨认 texel 与色块边界，弱 bilinear 只轻微软化，远处 mip 层才变得浑浊。保留接缝、拉伸、镜像、平铺、颜色烘焙阴影和跨部位尺度错乱；表面不应真的起绒或凸起，也不能把整张画面统一模糊。",
     "lighting": "宽泛单主光加弱环境光，方向性不强，接触阴影与反射不足；没有体积光、复杂全局光照、真实皮肤透光或毛发高光。",
     "mood_and_cultural_reference": "真诚的儿童教育叙事、廉价地方动画、早期游戏过场与民间粗糙 3D；气氛天真、压抑、迟钝、略令人不适，但不是主动恐怖。"
   },
@@ -96,16 +96,16 @@
   "image_treatment": {
     "applicable": true,
     "medium": "低预算早期三维动画截图与低码率 VCD 数字视频帧。",
-    "rendering_mode": "极低多边形、无细分曲面的模型，轮廓与受光面保留可见平面切面；使用简单 Gouraud/Phong 式明暗、基础漫反射与少量高光，无现代 PBR、光线追踪或高质量全局照明。",
-    "linework_and_shapes": "不画插画轮廓线；用椭球、圆柱、钝角块面和简单切面构成角色与环境，允许剪影笨拙、交界僵硬和轻微模型穿插。",
-    "texture_and_material": "每种主要表面只用一张约 32–128 px、经最近邻或粗糙双线性放大的低分辨率漫反射贴图；毛发表现为贴在少量楔形块上的烘焙色块，不生成独立毛束。皮肤、布料、木头、石头与草地必须能看到重复像素、接缝、镜像、平铺、UV 拉伸和尺度错乱；避免均匀细密的现代程序噪点与高频法线细节。",
+    "rendering_mode": "使用 fixed-function 时代中等偏低面数、二级形体稀少的实时网格；轮廓保留足够段数，只在关节与大曲线处轻微分段，不使用现代 subdivision-surface 平滑，也不做极端体素化或大片裸露三角面。以 Gouraud/顶点光照、基础 diffuse 采样和极少宽泛高光渲染，大部分明暗直接烘焙进颜色贴图；不使用法线贴图、位移、复杂 bump、PBR 粗糙度、光线追踪或高质量全局照明。",
+    "linework_and_shapes": "不画插画轮廓线；用椭球、胶囊、粗圆柱、楔形块和钝块构成角色与环境，轮廓仍圆但分段有限、比例粗糙、部件交界僵硬并允许轻微穿插；模型要像旧游戏资产，不像极端低模雕塑，也不像经过现代细分曲面打磨的光滑手办。",
+    "texture_and_material": "每个主体使用少量低清栅格 diffuse 贴图或粗糙 texture atlas。皮肤、毛发、布料、木头、树叶、草地、石头和金属的细节都通过贴图中的扁平颜色、照片碎片、粗笔触、预烘焙高光和阴影表达，模型表面本身保持基本平坦。把 texel 密度降到正常的约 1/3–1/5：近处使用 nearest 或弱 bilinear 采样，让 texel 与贴图色块清楚可辨但边缘略软；只有远处 mip 层才变脏变糊。保留不一致 texel 尺度、UV 拉伸、接缝、镜像、平铺和颜色串染。禁止用整帧柔焦替代低清贴图，也禁止真实绒毛、独立毛束、立体颗粒、位移、视差、高频法线与现代材质分层。",
     "lighting_and_depth": "一盏宽泛主光加弱环境光，阴影边缘简单，接触阴影不足；景深缺失或出现不自然的统一模糊，前中后景分层粗糙。",
     "finish": "保留轻度锯齿、JPEG/VCD 压缩、色带、色度渗漏、缩放模糊和锐化光晕；这些痕迹要克制，不能演变成满屏 glitch 或复古录像带特效。"
   },
   "photographic_direction": {
     "applicable": true,
     "camera_and_lens": "使用普通到轻微广角视野的固定虚拟相机，约等效 28–50mm 的朴素视角；机位眼平，避免鱼眼、长焦压缩和现代电影镜头炫光。",
-    "framing_and_focus": "采用建立镜头、双人中景、单人半身和突然贴脸的低成本对话过场语法；焦点大体固定，所有景别同样偏软，不使用漂亮的浅景深散景。",
+    "framing_and_focus": "采用建立镜头、双人中景、单人半身和突然贴脸的低成本对话过场语法；焦点大体固定，近处贴图色块保持可辨，只有远景 mip 层偏软，不使用整帧柔焦或漂亮的浅景深散景。",
     "lighting": "虚拟摄影只接受均匀、廉价的日间主光或简单黄橙晚霞光；没有复杂轮廓光、体积雾、HDR 反射与戏剧化明暗塑形。",
     "motion_and_depth": "画面像动画暂停帧：角色动作停滞、手势幅度小、身体重心不自然；相机不运动，空间由重复资产和简单尺度递减制造。",
     "color_grade": "保持直接的高饱和绿、青、黄、橙与轻微绿偏色；可有低码率色彩污染，不加入胶片曲线、青橙大片调色或精致复古滤镜。",
@@ -113,10 +113,10 @@
   },
   "rule_system": {
     "design_rules": [
-      "所有角色和场景都应显得由少量基础几何与现成素材组成，不隐藏低多边形、接缝、重复贴图和绑定局限。",
+      "所有角色和场景都应显得像 fixed-function 时代中等偏低面数的实时游戏资产：二级形体稀少、轮廓有足够分段、部件交界与绑定局限明显；不使用现代 subdivision-surface 丝滑平滑，也不能退化成体素、方块或大片三角切面的极端减面雕塑。",
       "角色采用玩偶化头身比、短粗四肢、连指手和有限面部部件，表情保持迟钝、克制而一本正经。",
       "背景山川树木必须素材化：同一球状树、圆丘、草地贴图和岩石重复使用，只通过缩放、旋转和位置制造变化。",
-      "照明与材质保持统一且简陋，塑料、软陶、廉价植绒、木头和草地之间只做最低限度区分。",
+      "照明与材质保持统一且简陋，塑料、皮肤、布料、木头、金属和草地主要靠少量低清 diffuse 贴图区分，并把很多明暗直接画进贴图。",
       "构图使用眼平固定镜头和过于直接的中景、双人或正面镜头，不追求黄金分割、动态透视或电影感。",
       "颜色保持过饱和且分区简单，优先让绿青环境与黄橙角色形成生硬对比。",
       "如果 MAIN_TEXT 不是省略指令，就生成原创的底部 VCD 硬字幕；字幕是叙事层，不是海报标题。",
@@ -124,23 +124,24 @@
     ],
     "do": [
       "创建新的笨拙拟人角色、新道具和新场景关系，并让 SUBJECT、SUBJECT_ACTION 与 LOCATION 清晰可辨。",
-      "保留低复杂度拓扑、贴图平铺、UV 拉伸、轻微穿模、接触阴影不足和姿势僵硬等可信的早期制作局限。",
+      "保留粗糙简模、低 texel 密度、近处可辨的放大 texel 色块、远处浑浊 mip 层、UV 拉伸、接缝、镜像、平铺、轻微穿模、接触阴影不足和姿势僵硬等可信的早期制作局限。",
       "让 CHARACTER_COUNT、FACIAL_EXPRESSION 与 SHOT_TYPE 真正改变人物数量、表演和镜头，而不破坏统一的低预算视觉。",
       "使用球状树冠、圆丘、纯青天空、平铺草地和简单岩石建立低成本山川树木背景。",
       "按 MEDIA_ARTIFACTS 克制加入低清压缩与色彩污染，同时保持主体和原创字幕可读。",
       "让画面看起来像某个小团队认真完成的儿童叙事镜头，而不是艺术家有意做丑的概念设计。"
     ],
     "avoid": [
-      "避免现代精致 CGI、皮克斯或迪士尼式圆润角色、AAA 游戏过场、写实 PBR 与商业角色广告质感。",
-      "避免真实毛发束、皮肤次表面散射、复杂布料、金属反射、光线追踪、全局照明、体积光和电影级景深。",
+      "避免现代大型工作室式精致 CGI、无缝设计师玩具表面、AAA 游戏过场、写实 PBR 与商业角色广告质感。",
+      "避免极端低面数、体素轮廓、方块肢体、只剩几块大平面或刻意炫耀三角面的低模雕塑；同时避免高细分、完美圆滑的现代模型。",
+      "避免真实毛发束、毛毡绒面、植绒颗粒、海绵孔洞材质、位移、视差、复杂 bump、皮肤次表面散射、复杂布料、金属反射、法线贴图、光线追踪、全局照明、体积光和电影级景深。",
       "避免优雅人体比例、灵活绑定、夸张动画表情、动漫大眼、完美对称与动态动作大片构图。",
       "避免写实森林植被、精细树叶、真实地形侵蚀、自然天空云层与丰富大气透视。",
       "避免赛博朋克霓虹、电影青橙调色、胶片颗粒、VHS 扫描线和过量 glitch；这些都不是目标年代与媒介。",
       "避免自觉恶搞、表情包构图、互联网梗文字、恐怖血腥与刻意 jump scare。",
-      "避免复制参考图中的角色、真实人物、现成字幕、品牌、logo、水印、角标、影院环境和平台界面。",
+      "原创生成时避免复制既有作品中的角色、真实人物、现成字幕、品牌、logo、水印、角标、影院环境和平台界面。",
       "避免把变量的省略指令渲染成文字；ACCENT_SYMBOL 或 SECONDARY_TEXT 表示不使用时应完全省略。"
     ],
-    "negative_prompt": "modern polished CGI, Pixar style, Disney style, photorealism, subdivision surfaces, smooth topology, high polygon count, rounded premium clay, modern felt figurine, fine uniform procedural felt noise, clean UV mapping, high-resolution textures, high-frequency normal-map detail, realistic fur simulation, detailed hair strands, cinematic PBR materials, ray tracing, global illumination, volumetric lighting, dramatic rim light, sophisticated color grading, elegant anatomy, expressive anime eyes, perfect facial symmetry, smooth professional rigging, dynamic action pose, complex camera movement, premium game cutscene, ultra-clean render, glossy commercial character design, realistic forest foliage, high-resolution microdetail, neon cyberpunk, VHS scanlines, excessive glitch, intentional meme collage, gore, horror monster, copied subtitles, logos, watermarks, app UI, media-player controls, copyrighted character likeness, recognizable public figure"
+    "negative_prompt": "physical felt fibers, flocked fuzzy surface, wool pile, plush toy, chenille, carpet texture, sponge pores as geometry, tactile clumps, raised fibers, displacement mapping, parallax mapping, heavy bump mapping, normal-map microdetail, PBR roughness variation, realistic fur strands, photoreal materials, crisp high-resolution textures, clean modern texture atlas, uniform texel density, perfectly clean UVs, procedural micro-noise, subdivision-perfect model, seamless designer toy, premium clay render, extreme ultra-low-poly sculpture, voxel forms, cube limbs, only a few giant polygon planes, deliberately showcased triangle facets, modern polished CGI, Pixar style, Disney style, cinematic PBR, ray tracing, global illumination, volumetric lighting, dramatic rim light, sophisticated color grading, elegant anatomy, perfect facial symmetry, smooth professional rigging, dynamic action pose, complex camera movement, premium game cutscene, ultra-clean render, glossy commercial character design, realistic forest foliage, neon cyberpunk, VHS scanlines, excessive glitch, intentional meme collage, gore, horror monster, copied subtitles, logos, watermarks, app UI, media-player controls, recognizable public figure"
   },
-  "prompt_template": "Create an original {{ASPECT_RATIO}} still from a sincere, low-budget early-2000s children's VCD 3D animation or PS2-era cutscene. Show {{CHARACTER_COUNT}} {{SUBJECT}} {{SUBJECT_ACTION}} at {{LOCATION}}. Include {{PRODUCT_OR_PROP}} and build the background from {{BACKGROUND_ELEMENTS}}. Give the characters {{FACIAL_EXPRESSION}}, {{WARDROBE_STYLE}}, oversized doll-like heads, short 8–12-sided cylindrical limbs, mitten hands, stiff joints, awkward weight balance, and a unified cheap plastic, foam, soft-clay, or flocked texture. Use {{SHOT_TYPE}} with a fixed eye-level virtual camera, flat stage-like depth, sparse foreground props, repeated middle-ground assets, and simple distant hills. Render with aggressively low polygon counts, no subdivision smoothing, visibly planar facets and angular silhouette breaks. Use 32–128 px tiled diffuse textures enlarged with nearest-neighbor or crude bilinear filtering, obvious repeated pixels, seams, mirrored patches, UV stretching and mismatched texture scale; do not replace these defects with fine uniform felt noise or high-frequency normal-map detail. Use simple Gouraud/Phong shading, one broad key light, weak ambient fill, limited contact shadows, no PBR, no realistic fur, and no cinematic polish. Use an oversaturated grass-green and cyan environment against ochre, yellow, beige, and charcoal subjects; keep blacks slightly crushed and highlights slightly blown. If {{MAIN_TEXT}} is not an omission instruction, place the exact original text “{{MAIN_TEXT}}” as one line of bottom-centered Simplified Chinese VCD subtitle in a plain white or light-gray sans-serif font with a thick dark outline. Use “{{SECONDARY_TEXT}}” only when it contains real secondary copy; otherwise omit it completely. Add {{ACCENT_SYMBOL}} only when it specifies a real original symbol; otherwise omit it. Apply {{MEDIA_ARTIFACTS}} with restraint: the scene must remain readable and should not become a glitch artwork. Keep the storytelling naive, serious, and unaware of its own absurdity. Create new characters, dialogue, props, locations, and relationships; do not reproduce any existing character, public figure, logo, watermark, platform UI, existing IP, subtitle, shot arrangement, or narrative identity."
+  "prompt_template": "Create an original {{ASPECT_RATIO}} still from a sincere, low-budget late-1990s to early-2000s PC/console real-time game cutscene or children's VCD 3D animation. Show {{CHARACTER_COUNT}} {{SUBJECT}} {{SUBJECT_ACTION}} at {{LOCATION}}. Include {{PRODUCT_OR_PROP}} and build the background from {{BACKGROUND_ELEMENTS}}. Give the characters {{FACIAL_EXPRESSION}}, {{WARDROBE_STYLE}}, oversized cartoon-character heads, coarse cylindrical limbs, mitten hands, stiff joints, awkward weight balance, and crude readable silhouettes. Build characters and scenery as moderate-poly fixed-function-era real-time meshes with sparse secondary forms, hard part intersections and stiff rigging. Keep enough silhouette segments to remain rounded and readable; do not use modern subdivision-surface smoothing, and show only subtle segmentation at joints and large curves rather than giant triangle facets or voxel-like reduction. Use {{SHOT_TYPE}} with a fixed eye-level virtual camera, flat stage-like depth, sparse foreground props, repeated middle-ground assets, and simple distant hills. Make the cheapness come primarily from texture mapping, not physical surface roughness. Wrap the basically flat model surfaces in a few low-resolution raster diffuse maps or crude texture atlases. Paint hair, fur, cloth weave, bark, leaves, grass, stone grain, metal wear, highlights and much of the shadow directly into the color maps. Reduce texel density to roughly one-third to one-fifth of normal so painted texels and color patches appear enlarged. At close range use nearest or weak bilinear sampling so the enlarged texels remain recognizable with only slightly softened edges; let only distant mip levels become muddy and blurred. Preserve inconsistent texel scale, UV stretching around joints and curves, seams, mirrored islands, obvious tiling, color bleed and baked lighting. Never replace this with whole-frame blur. Do not generate real fibers, flocking, sponge relief, displacement, parallax, complex bump, normal-map microdetail or PBR material layers. Use simple Gouraud/vertex lighting, one broad key light, weak ambient fill, limited contact shadows and no cinematic polish. Use an oversaturated grass-green and cyan environment against ochre, yellow, beige and charcoal subjects; keep blacks slightly crushed and highlights slightly blown. If {{MAIN_TEXT}} is not an omission instruction, place the exact original text “{{MAIN_TEXT}}” as one line of bottom-centered Simplified Chinese VCD subtitle in a plain white or light-gray sans-serif font with a thick dark outline. Use “{{SECONDARY_TEXT}}” only when it contains real secondary copy; otherwise omit it completely. Add {{ACCENT_SYMBOL}} only when it specifies a real original symbol; otherwise omit it. Apply {{MEDIA_ARTIFACTS}} with restraint: the scene must remain readable and should not become a glitch artwork. Keep the storytelling naive, serious and unaware of its own absurdity. For original generation, create new characters, dialogue, props, locations and relationships; do not reproduce any reference character, public figure, logo, watermark, platform UI, existing IP, subtitle, shot arrangement or narrative identity. When the user explicitly supplies an edit target, preserve only the requested content, identity, pose, spatial layout, props and text from that target while changing the modeling, texture mapping and rendering system; never treat the edit target as a reusable style reference."
 }
