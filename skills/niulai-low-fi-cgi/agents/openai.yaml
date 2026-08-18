@@ -1,0 +1,4 @@
+interface:
+  display_name: "NiuLai · 荒诞低精度 CGI"
+  short_description: "用低多边形、重复贴图与VCD字幕生成怪诞早期3D动画截图"
+  default_prompt: "使用 $niulai-low-fi-cgi，根据我给出的角色和场景生成一张怪诞低精度 CGI 图片。"
