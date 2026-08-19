@@ -1,6 +1,6 @@
 # NiuLai-image
 
-一个用于生成低成本早期 3D CGI 图像的 Codex Skill：fixed-function 时代中等偏低面数的粗糙实时模型、僵硬绑定、低 texel 密度的低清 diffuse 贴图、素材包式山林，以及旧式 PC／主机游戏过场与儿童 VCD 的粗糙数字质感。
+一个用于生成低成本早期 3D CGI 图像的 Codex Skill：fixed-function 时代中等偏低面数的粗糙实时模型、僵硬绑定、低 texel 密度的低清 diffuse 贴图、素材包式山林，以及旧式 PC／主机游戏过场与粗糙卡通 VCD 的数字质感。
 
 ## 特点
 
@@ -24,7 +24,7 @@ cp -R NiuLai-image/skills/niulai-low-fi-cgi \
 ## 使用示例
 
 ```text
-使用 $niulai-low-fi-cgi，生成一张三个萝卜工人在粗糙森林公交站等待末班车的 4:3 儿童 VCD 动画截图。
+使用 $niulai-low-fi-cgi，生成一张三个萝卜工人在粗糙森林公交站等待末班车的 4:3 粗糙卡通 VCD 动画截图。
 ```
 
 也可以提供一张待转换图片，并要求保留主体身份、服装特征、动作、构图和文字，仅迁移 NiuLai 的粗糙简模、低清贴图映射与早期实时渲染系统。对于用户主动提供的虚构角色编辑目标，Skill 会锁定原角色，不擅自换成原创替代人物。
