@@ -1,9 +1,9 @@
 ---
 name: niulai-low-fi-cgi
-description: "生成原创的低成本早期 3D CGI、旧式 PC/主机游戏过场、山寨儿童 VCD、Uncanny/Cursed CGI 与数字原始主义图像。核心是 fixed-function 时代中等偏低面数的粗糙实时建模，以及低 texel 密度、放大色块、UV 拉伸和重复平铺明显的低清 diffuse 贴图。用户提到 NiuLai、荒诞低精度 CGI、老游戏贴图感、粗糙建模、重复贴图森林或一本正经的诡异儿童叙事时使用。"
+description: "生成原创的低成本早期 3D CGI、旧式 PC/主机游戏过场、山寨儿童 VCD、Uncanny/Cursed CGI 与数字原始主义图像。核心是 fixed-function 时代中等偏低面数的粗糙实时建模，以及低 texel 密度、放大色块、UV 拉伸和重复平铺明显的低清 diffuse 贴图。用户提到 NiuLai、低精度 CGI、老游戏贴图感、粗糙建模、重复贴图森林或一本正经的诡异儿童叙事时使用。"
 ---
 
-# NiuLai · 荒诞低精度 CGI
+# NiuLai · 低精度 CGI
 
 把角色与场景编译成原创的千禧年前后低预算 3D 动画截图：粗糙、天真、严肃，并因技术限制自然产生怪诞感。
 
